@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johan Verjans — Clinician-Scientist, AI in Healthcare</title>
+<meta name="description" content="A/Prof Johan Verjans is a clinician-scientist and cardiologist leading medical machine learning research at the University of Adelaide and SAHMRI.">
+<style>
+  :root{
+    --bg:#ffffff;
+    --fg:#1a1a1a;
+    --muted:#5c5c5c;
+    --line:#e6e6e6;
+    --accent:#1e5eff;
+    --soft:#f6f7f9;
+    --max:760px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--fg);
+    background:var(--bg);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    font-size:17px;
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+  /* Header / nav */
+  header{position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  nav{max-width:var(--max);margin:0 auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  nav .name{font-weight:600;font-size:15px;letter-spacing:.2px}
+  nav .links{display:flex;gap:20px;font-size:14px}
+  nav .links a{color:var(--muted)}
+  nav .links a:hover{color:var(--fg);text-decoration:none}
+  @media(max-width:560px){nav .links{display:none}}
+
+  /* Hero */
+  .hero{padding:72px 0 40px}
+  .hero h1{font-size:38px;line-height:1.15;font-weight:700;letter-spacing:-.5px}
+  .hero .role{margin-top:14px;font-size:19px;color:var(--muted)}
+  .hero .meta{margin-top:18px;font-size:15px;color:var(--muted)}
+  .hero .cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;padding:10px 18px;border-radius:8px;font-size:15px;font-weight:500;border:1px solid var(--line)}
+  .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .btn.primary:hover{background:#1748cc;text-decoration:none}
+  .btn:hover{text-decoration:none;border-color:var(--fg)}
+
+  /* Sections */
+  section{padding:40px 0;border-top:1px solid var(--line)}
+  section h2{font-size:14px;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);font-weight:600;margin-bottom:22px}
+  section p{margin-bottom:16px;color:#2a2a2a}
+  section p:last-child{margin-bottom:0}
+
+  /* Experience list */
+  .row{display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .row:last-child{border-bottom:none}
+  .row .when{flex:0 0 110px;color:var(--muted);font-size:14px;padding-top:2px}
+  .row .what .title{font-weight:600}
+  .row .what .org{color:var(--muted);font-size:15px}
+  @media(max-width:560px){.row{flex-direction:column;gap:2px}.row .when{flex:none}}
+
+  /* Project cards */
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:560px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:18px}
+  .card h3{font-size:16px;margin-bottom:6px}
+  .card p{font-size:14.5px;color:var(--muted);margin:0}
+
+  /* Pub list */
+  .pubs{list-style:none}
+  .pubs li{padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+  .pubs li:last-child{border-bottom:none}
+  .pubs .venue{color:var(--accent);font-weight:600}
+  .pubs .yr{color:var(--muted)}
+
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+  .tag{background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:5px 12px;font-size:13.5px;color:var(--muted)}
+
+  footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;text-align:center}
+  .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+  @media(max-width:560px){.stat-grid{grid-template-columns:repeat(3,1fr)}}
+  .stat{text-align:left}
+  .stat .num{font-size:26px;font-weight:700;color:var(--fg)}
+  .stat .lbl{font-size:13px;color:var(--muted);margin-top:2px}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <span class="name">Johan Verjans</span>
+    <span class="links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </span>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <h1>Johan Verjans</h1>
+    <div class="role">Clinician-scientist &amp; cardiologist working at the frontier of AI in healthcare</div>
+    <div class="meta">Associate Professor, University of Adelaide · Platform Leader (AI), SAHMRI · Consultant Cardiologist, Royal Adelaide Hospital · Adelaide, Australia</div>
+    <div class="cta">
+      <a class="btn primary" href="#contact">Get in touch</a>
+      <a class="btn" href="https://researchers.adelaide.edu.au/profile/johan.verjans" target="_blank" rel="noopener">University profile</a>
+      <a class="btn" href="https://github.com/jverjans" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I am a clinician-scientist at the Royal Adelaide Hospital whose work sits at the intersection of medicine, imaging and machine learning. I combine training in molecular medicine and clinical cardiology with years of collaboration alongside engineers and computer scientists, with one goal: translating advanced AI research into real clinical impact.</p>
+    <p>I graduated in medicine from Maastricht University via an MD–PhD track after a DiPalma Fellowship with Professor Jagat Narula in Philadelphia and UC Irvine. During cardiology training I was awarded a Rubicon Fellowship by the Dutch Science Foundation for a post-doctoral fellowship at Massachusetts General Hospital / Harvard Medical School, followed by a clinician-scientist award at University Medical Centre Utrecht. I was recruited by the University of Adelaide in 2017 and received the University's Future Industry Making Fellowship in 2022.</p>
+    <p>I founded and lead the Medical Machine Learning group at the Australian Institute for Machine Learning (AIML) — now 40+ clinicians, biomedical researchers and computer scientists — with the aim of making the University of Adelaide a global leader in AI for healthcare. The group has won international technology challenges and holds research contracts with companies including GSK, Roche, Siemens Healthineers and Medtronic.</p>
+    <div class="tags">
+      <span class="tag">Medical AI / Machine Learning</span>
+      <span class="tag">Cardiovascular Imaging</span>
+      <span class="tag">Computer Vision</span>
+      <span class="tag">Digital Health</span>
+      <span class="tag">Clinical Trials</span>
+      <span class="tag">Translational Research</span>
+    </div>
+  </section>
+
+  <section id="impact">
+    <h2>By the numbers</h2>
+    <div class="stat-grid">
+      <div class="stat"><div class="num">150+</div><div class="lbl">peer-reviewed publications</div></div>
+      <div class="stat"><div class="num">40+</div><div class="lbl">researchers in the group</div></div>
+      <div class="stat"><div class="num">3,000+</div><div class="lbl">citations from elite venues</div></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="row">
+      <div class="when">2022 — now</div>
+      <div class="what"><div class="title">Future Industry Making Fellow</div><div class="org">University of Adelaide</div></div>
+    </div>
+    <div class="row">
+      <div class="when">2019 — now</div>
+      <div class="what"><div class="title">Platform Leader, Artificial Intelligence</div><div class="org">South Australian Health and Medical Research Institute (SAHMRI)</div></div>
+    </div>
+    <div class="row">
+      <div class="when">2019 — now</div>
+      <div class="what"><div class="title">Consultant Cardiologist</div><div class="org">Royal Adelaide Hospital · Jones Radiology</div></div>
+    </div>
+    <div class="row">
+      <div class="when">2017 — 2024</div>
+      <div class="what"><div class="title">Deputy Director, Medical Machine Learning</div><div class="org">Australian Institute for Machine Learning (AIML), University of Adelaide</div></div>
+    </div>
+    <div class="row">
+      <div class="when">2013 — 2015</div>
+      <div class="what"><div class="title">Post-Doctoral Fellow (Rubicon Fellowship)</div><div class="org">Massachusetts General Hospital / Harvard Medical School</div></div>
+    </div>
+    <div class="row">
+      <div class="when">Education</div>
+      <div class="what"><div class="title">MD &amp; PhD</div><div class="org">Maastricht University, the Netherlands</div></div>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research &amp; Projects</h2>
+    <p>My group applies machine learning to medical imaging and clinical data — from anomaly detection and image synthesis to interpretable, trustworthy AI — and runs the translational projects that bring these tools into hospital workflows across South Australia.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>RapidX AI</h3>
+        <p>The world's first randomised controlled trial of AI-supported assessment of suspected cardiac chest pain in the emergency department.</p>
+      </div>
+      <div class="card">
+        <h3>Automedic</h3>
+        <p>SA Health's largest AI project — automating the review of patients across the South Australian health system.</p>
+      </div>
+      <div class="card">
+        <h3>Cardiomics</h3>
+        <p>Improving guideline adherence and outcomes after myocardial infarction through data-driven cardiology.</p>
+      </div>
+      <div class="card">
+        <h3>Medical VQA Challenge</h3>
+        <p>Our team won the NIH global Medical Visual Question Answering challenge — an early forerunner of today's medical multimodal AI.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <ul class="pubs">
+      <li>Pitt B, et al. Cardiovascular Events with Finerenone in Kidney Disease and Type 2 Diabetes. <span class="venue">New England Journal of Medicine</span> <span class="yr">· 2021</span></li>
+      <li>van den Borne SWM, et al. Myocardial remodeling after infarction: the role of myofibroblasts. <span class="venue">Nature Reviews Cardiology</span> <span class="yr">· 2010</span></li>
+      <li>Zhang J, et al. Viral pneumonia screening on chest X-rays using confidence-aware anomaly detection. <span class="venue">IEEE Transactions on Medical Imaging</span> <span class="yr">· 2021</span></li>
+      <li>Tian Y, et al. Weakly-supervised video anomaly detection with robust temporal feature magnitude learning. <span class="venue">ICCV</span> <span class="yr">· 2021</span></li>
+      <li>Sengupta PP, et al. Proposed Requirements for Cardiovascular Imaging-Related Machine Learning Evaluation (PRIME). <span class="venue">JACC: Cardiovascular Imaging</span> <span class="yr">· 2020</span></li>
+      <li>Huy TD, et al. Interactive Medical Image Analysis with Concept-based Similarity Reasoning. <span class="venue">CVPR</span> <span class="yr">· 2025</span></li>
+      <li>Li J, et al. Ultrathin monolithic 3D-printed optical coherence tomography endoscopy. <span class="venue">Light: Science &amp; Applications</span> <span class="yr">· 2020</span></li>
+      <li>Verjans JW, et al. Targeted Near-Infrared Fluorescence Imaging of Atherosclerosis. <span class="venue">JACC: Cardiovascular Imaging</span> <span class="yr">· 2016</span></li>
+    </ul>
+    <p style="margin-top:18px;font-size:14.5px;color:var(--muted)">Full publication list on the <a href="https://researchers.adelaide.edu.au/profile/johan.verjans" target="_blank" rel="noopener">University of Adelaide profile</a>.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>I'm always happy to hear from prospective students, collaborators and industry partners. I'm eligible to supervise Masters and PhD students — reach out to discuss availability.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://researchers.adelaide.edu.au/profile/johan.verjans" target="_blank" rel="noopener">University of Adelaide profile</a>
+      <a class="btn" href="https://github.com/jverjans" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://scholar.google.com/scholar?q=Johan+Verjans" target="_blank" rel="noopener">Google Scholar</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr"></span> Johan Verjans · Adelaide, Australia · Built with GitHub Pages</div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
