@@ -81,6 +81,10 @@
   .pubs li:last-child{border-bottom:none}
   .pubs .venue{color:var(--accent);font-weight:600}
   .pubs .yr{color:var(--muted)}
+  .pubs li{display:flex;gap:14px;align-items:baseline;justify-content:space-between}
+  .pubs .txt{flex:1 1 auto}
+  .cites{flex:0 0 auto;background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:3px 10px;font-size:12.5px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+  @media(max-width:560px){.pubs li{flex-direction:column;gap:4px}}
 
   .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
   .tag{background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:5px 12px;font-size:13.5px;color:var(--muted)}
@@ -236,18 +240,24 @@
   </section>
 
   <section id="publications">
-    <h2>Selected Publications</h2>
+    <h2>Top Papers</h2>
+    <p>Author of 150+ peer-reviewed publications and 10+ book chapters across cardiology, computer vision and medical AI — including work in NEJM, Nature Reviews Cardiology, Circulation, JACC, CVPR, ICCV and IEEE TMI. A selection of the most-cited below; citation counts are approximate.</p>
     <ul class="pubs">
-      <li>Pitt B, et al. Cardiovascular Events with Finerenone in Kidney Disease and Type 2 Diabetes. <span class="venue">New England Journal of Medicine</span> <span class="yr">· 2021</span></li>
-      <li>van den Borne SWM, et al. Myocardial remodeling after infarction: the role of myofibroblasts. <span class="venue">Nature Reviews Cardiology</span> <span class="yr">· 2010</span></li>
-      <li>Zhang J, et al. Viral pneumonia screening on chest X-rays using confidence-aware anomaly detection. <span class="venue">IEEE Transactions on Medical Imaging</span> <span class="yr">· 2021</span></li>
-      <li>Tian Y, et al. Weakly-supervised video anomaly detection with robust temporal feature magnitude learning. <span class="venue">ICCV</span> <span class="yr">· 2021</span></li>
-      <li>Sengupta PP, et al. Proposed Requirements for Cardiovascular Imaging-Related Machine Learning Evaluation (PRIME). <span class="venue">JACC: Cardiovascular Imaging</span> <span class="yr">· 2020</span></li>
-      <li>Huy TD, et al. Interactive Medical Image Analysis with Concept-based Similarity Reasoning. <span class="venue">CVPR</span> <span class="yr">· 2025</span></li>
-      <li>Li J, et al. Ultrathin monolithic 3D-printed optical coherence tomography endoscopy. <span class="venue">Light: Science &amp; Applications</span> <span class="yr">· 2020</span></li>
-      <li>Verjans JW, et al. Targeted Near-Infrared Fluorescence Imaging of Atherosclerosis. <span class="venue">JACC: Cardiovascular Imaging</span> <span class="yr">· 2016</span></li>
+      <li><span class="txt">Pitt B, et al. Cardiovascular Events with Finerenone in Kidney Disease and Type&nbsp;2 Diabetes. <span class="venue">New England Journal of Medicine</span> <span class="yr">· 2021</span></span><span class="cites">~1,400 cites</span></li>
+      <li><span class="txt">Zhang J, et al. Viral pneumonia screening on chest X-rays using confidence-aware anomaly detection. <span class="venue">IEEE Trans. Medical Imaging</span> <span class="yr">· 2021</span></span><span class="cites">~1,026 cites</span></li>
+      <li><span class="txt">van den Borne SWM, et al. Myocardial remodeling after infarction: the role of myofibroblasts. <span class="venue">Nature Reviews Cardiology</span> <span class="yr">· 2010</span></span><span class="cites">~950 cites</span></li>
+      <li><span class="txt">Agarwal R, et al. Cardiovascular and kidney outcomes with finerenone: the FIDELITY pooled analysis. <span class="venue">European Heart Journal</span> <span class="yr">· 2022</span></span><span class="cites">~640 cites</span></li>
+      <li><span class="txt">Tian Y, et al. Weakly-supervised video anomaly detection with robust temporal feature magnitude learning. <span class="venue">ICCV</span> <span class="yr">· 2021</span></span><span class="cites">~503 cites</span></li>
+      <li><span class="txt">Kolodgie FD, et al. Targeting of apoptotic macrophages and experimental atheroma with radiolabeled annexin&nbsp;V. <span class="venue">Circulation</span> <span class="yr">· 2003</span></span><span class="cites">~233 cites</span></li>
+      <li><span class="txt">Filippatos G, et al. Finerenone reduces risk of incident heart failure in CKD and type&nbsp;2 diabetes. <span class="venue">Circulation</span> <span class="yr">· 2022</span></span><span class="cites">~204 cites</span></li>
+      <li><span class="txt">Sengupta PP, et al. Proposed Requirements for Cardiovascular Imaging-Related ML Evaluation (PRIME). <span class="venue">JACC: Cardiovascular Imaging</span> <span class="yr">· 2020</span></span><span class="cites">~195 cites</span></li>
+      <li><span class="txt">Li J, et al. Ultrathin monolithic 3D-printed optical coherence tomography endoscopy. <span class="venue">Light: Science &amp; Applications</span> <span class="yr">· 2020</span></span><span class="cites">~152 cites</span></li>
+      <li><span class="txt">Wang DD, et al. 3D printing, computational modeling, and AI for structural heart disease. <span class="venue">JACC: Cardiovascular Imaging</span> <span class="yr">· 2021</span></span><span class="cites">~120 cites</span></li>
     </ul>
-    <p style="margin-top:18px;font-size:14.5px;color:var(--muted)">Full publication list on the <a href="https://researchers.adelaide.edu.au/profile/johan.verjans" target="_blank" rel="noopener">University of Adelaide profile</a>.</p>
+    <div class="cta">
+      <a class="btn primary" href="publications.html">View full publication list</a>
+      <a class="btn" href="https://scholar.google.com/citations?user=57JVdyIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    </div>
   </section>
 
   <section id="contact">
@@ -256,7 +266,7 @@
     <div class="cta">
       <a class="btn primary" href="https://researchers.adelaide.edu.au/profile/johan.verjans" target="_blank" rel="noopener">University of Adelaide profile</a>
       <a class="btn" href="https://github.com/jverjans" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://scholar.google.com/scholar?q=Johan+Verjans" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="btn" href="https://scholar.google.com/citations?user=57JVdyIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
     </div>
   </section>
 
