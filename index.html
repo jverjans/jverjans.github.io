@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Johan Verjans — Clinician-Scientist, AI in Healthcare</title>
 <meta name="description" content="A/Prof Johan Verjans is a clinician-scientist and cardiologist leading medical machine learning research at the University of Adelaide and SAHMRI.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e5eff'/%3E%3Ctext x='32' y='44' font-family='Helvetica,Arial,sans-serif' font-size='34' font-weight='700' fill='%23fff' text-anchor='middle'%3EJV%3C/text%3E%3C/svg%3E">
 <style>
   :root{
     --bg:#ffffff;
@@ -39,7 +40,11 @@
   @media(max-width:560px){nav .links{display:none}}
 
   /* Hero */
-  .hero{padding:72px 0 40px}
+  .hero{padding:72px 0 40px;display:flex;gap:36px;align-items:center}
+  .hero .photo{flex:0 0 148px}
+  .hero .photo img{width:148px;height:148px;border-radius:50%;object-fit:cover;border:1px solid var(--line);box-shadow:0 4px 18px rgba(0,0,0,.08)}
+  .hero .intro{flex:1 1 auto;min-width:0}
+  @media(max-width:560px){.hero{flex-direction:column;gap:22px;text-align:center;padding:48px 0 36px}.hero .cta{justify-content:center}}
   .hero h1{font-size:38px;line-height:1.15;font-weight:700;letter-spacing:-.5px}
   .hero .role{margin-top:14px;font-size:19px;color:var(--muted)}
   .hero .meta{margin-top:18px;font-size:15px;color:var(--muted)}
@@ -97,6 +102,7 @@
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#research">Research</a>
+      <a href="#talks">Talks</a>
       <a href="#publications">Publications</a>
       <a href="#contact">Contact</a>
     </span>
@@ -106,13 +112,18 @@
 <main class="wrap">
 
   <div class="hero">
-    <h1>Johan Verjans</h1>
-    <div class="role">Clinician-scientist &amp; cardiologist working at the frontier of AI in healthcare</div>
-    <div class="meta">Associate Professor, University of Adelaide · Platform Leader (AI), SAHMRI · Consultant Cardiologist, Royal Adelaide Hospital · Adelaide, Australia</div>
-    <div class="cta">
-      <a class="btn primary" href="#contact">Get in touch</a>
-      <a class="btn" href="https://researchers.adelaide.edu.au/profile/johan.verjans" target="_blank" rel="noopener">University profile</a>
-      <a class="btn" href="https://github.com/jverjans" target="_blank" rel="noopener">GitHub</a>
+    <div class="photo">
+      <img src="https://researchers.adelaide.edu.au/sites/default/files/profile-images/19261.jpeg" alt="Johan Verjans" loading="eager">
+    </div>
+    <div class="intro">
+      <h1>Johan Verjans</h1>
+      <div class="role">Clinician-scientist &amp; cardiologist working at the frontier of AI in healthcare</div>
+      <div class="meta">Associate Professor, University of Adelaide · Platform Leader (AI), SAHMRI · Consultant Cardiologist, Royal Adelaide Hospital · Adelaide, Australia</div>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="https://researchers.adelaide.edu.au/profile/johan.verjans" target="_blank" rel="noopener">University profile</a>
+        <a class="btn" href="https://github.com/jverjans" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </div>
   </div>
 
@@ -188,6 +199,39 @@
         <h3>Medical VQA Challenge</h3>
         <p>Our team won the NIH global Medical Visual Question Answering challenge — an early forerunner of today's medical multimodal AI.</p>
       </div>
+    </div>
+  </section>
+
+  <section id="talks">
+    <h2>Talks, Media &amp; Recognition</h2>
+    <p>I'm regularly invited to give keynote presentations at national and international meetings on AI, digital health, medical imaging and innovation, and I've spoken at all major cardiovascular conferences, including several Young Investigator Award sessions.</p>
+    <div class="row">
+      <div class="when">Keynotes</div>
+      <div class="what"><div class="title">Invited speaker — AI &amp; Digital Health in Medicine</div><div class="org">National &amp; international meetings across AI, imaging and innovation</div></div>
+    </div>
+    <div class="row">
+      <div class="when">Chair</div>
+      <div class="what"><div class="title">Conference Chair</div><div class="org">Australian Society for Molecular Imaging Conference</div></div>
+    </div>
+    <div class="row">
+      <div class="when">Editorial</div>
+      <div class="what"><div class="title">Editorial Board Member</div><div class="org">European Heart Journal — Digital Health · Frontiers in Cardiology · (former) Associate Editor, Netherlands Heart Journal</div></div>
+    </div>
+    <div class="row">
+      <div class="when">Award</div>
+      <div class="what"><div class="title">Winner — NIH Global Medical Visual Question Answering (VQA) Challenge</div><div class="org">An early forerunner of today's medical multimodal AI</div></div>
+    </div>
+    <div class="row">
+      <div class="when">Recognition</div>
+      <div class="what"><div class="title">AI Centre in Medicine of the Year — Nominee (2022)</div><div class="org">AI Global Summit · for the institute's medical machine learning work</div></div>
+    </div>
+    <div class="row">
+      <div class="when">Authorship</div>
+      <div class="what"><div class="title">Lead author — chapter in the first book of AI in Medicine</div><div class="org">Springer / Nature · plus contributions to international standardisation of ML in medical imaging</div></div>
+    </div>
+    <div class="row">
+      <div class="when">Advisory</div>
+      <div class="what"><div class="title">AI strategy advisor &amp; global advisory board member</div><div class="org">Advising companies and government on AI in healthcare</div></div>
     </div>
   </section>
 
